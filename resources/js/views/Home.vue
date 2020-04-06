@@ -1,6 +1,6 @@
 <template>
     <div id="home">
-      <notif @trashNotifs="trashNotif" @endAnim="autoTrashNotif" :notifs="notifications"/>
+      <notif @trashNotifs="trashNotif"  :notifs="notifications"/>
         <div style="width: 30vw"class="input-group mb-3">
             <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-default">
@@ -154,14 +154,6 @@
                 console.log(elem)
                 this.notifications.splice(elem, 1)
             },
-
-            // autoTrashNotif(elem){
-            //     setTimeout( () => {
-            //         this.notifications.splice(elem, 1)
-            //      }, 2000);
-            //
-            // },
-
 
         }
     }

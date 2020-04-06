@@ -2171,13 +2171,7 @@ __webpack_require__.r(__webpack_exports__);
     trashNotif: function trashNotif(elem) {
       console.log(elem);
       this.notifications.splice(elem, 1);
-    } // autoTrashNotif(elem){
-    //     setTimeout( () => {
-    //         this.notifications.splice(elem, 1)
-    //      }, 2000);
-    //
-    // },
-
+    }
   }
 });
 
@@ -38572,7 +38566,7 @@ var render = function() {
     [
       _c("notif", {
         attrs: { notifs: _vm.notifications },
-        on: { trashNotifs: _vm.trashNotif, endAnim: _vm.autoTrashNotif }
+        on: { trashNotifs: _vm.trashNotif }
       }),
       _vm._v(" "),
       _c(
